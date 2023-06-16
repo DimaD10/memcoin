@@ -14,6 +14,9 @@ window.onload = function () {
         const mcduck = document.querySelector('.hero-preview__mcduck');
         const money = document.querySelector('.hero-preview__money');
         const decorOther = document.querySelector('.hero-preview__other');
+        // for utility
+        const blueMash = document.querySelector('.utility__decor-bg');
+        const duckHead = document.querySelector('.utility__decor-duck');
 
         // main__conclusion
         const forDecor = -50;
@@ -25,6 +28,9 @@ window.onload = function () {
         const forMcduck = 45;
         const forMoney = 75;
         const forDecorOther = 64;
+        // for utility
+        const forBlueMash = 30;
+        const forDuckHead = -50;
 
         const speed = 0.12;
 
@@ -49,6 +55,10 @@ window.onload = function () {
             mcduck.style.cssText = `transform: translate(${positionX / forMcduck}%, ${positionY / forMcduck}%);`;
             money.style.cssText = `transform: translate(${positionX / forMoney}%, ${positionY / forMoney}%);`;
             decorOther.style.cssText = `transform: translate(${positionX / forDecorOther}%, ${positionY / forDecorOther}%);`;
+
+            // for utility
+            blueMash.style.cssText = `transform: translate(${positionX / forBlueMash}%, ${positionY / forBlueMash}%);`;
+            duckHead.style.cssText = `transform: translate(${positionX / forDuckHead}%, ${positionY / forDuckHead}%);`;
 
             requestAnimationFrame(setMouseParallaxStyle);
         }

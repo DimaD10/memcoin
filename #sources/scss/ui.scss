@@ -1,16 +1,17 @@
 @import './fonts';
 @import './var';
 
-[class*="__container-big"] {
-    width: 100%;
-    max-width: 1230px;
-    padding: 0 10px;
-    margin: 0 auto;
-}
 
 [class*="__container"] {
     width: 100%;
     max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+[class*="__container-big"] {
+    width: 100%;
+    max-width: 1230px;
     padding: 0 10px;
     margin: 0 auto;
 }

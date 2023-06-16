@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>memcoin</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo-icon.png">
 </head>
@@ -16,7 +17,7 @@
                 </a>
                 <div class="header__burger-menu burger-menu">
                     <ul class="burger-menu__list header-list">
-                        <li class="header-list__el"><a href="#" class="header-list__link">Tocenomics</a></li>
+                        <li class="header-list__el" ><a href="#" class="header-list__link">Tocenomics</a></li>
                         <li class="header-list__el"><a href="#" class="header-list__link">Airdrop</a></li>
                         <li class="header-list__el"><a href="#" class="header-list__link">Roadmap</a></li>
                         <li class="header-list__el"><a href="#" class="header-list__link">WhitePaper</a></li>
@@ -31,9 +32,69 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__section section">
-                <div class="section__container">Content</div>
+            <section class="main__hero hero">
+                <div class="hero__container-big">
+                    <div class="hero__body">
+                        <div class="hero-preview" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+                            <div class="hero-preview-el hero-preview__decor-blue"><img src="./img/first-screen/preview-decor-blue.png" alt=""></div>
+                            <div class="hero-preview-el hero-preview__decor-red"><img src="./img/first-screen/preview-decor-red.svg" alt=""></div>
+                            <div class="hero-preview-el hero-preview__frame"><img src="./img/first-screen/preview-frame.png" alt=""></div>
+                            <div class="hero-preview-el hero-preview__mcduck"><img src="./img/first-screen/preview-scrooge.png" alt=""></div>
+                            <div class="hero-preview-el hero-preview__money"><img src="./img/first-screen/preview-money.png" alt=""></div>
+                            <div class="hero-preview-el hero-preview__other"><img src="./img/first-screen/preview-other.png" alt=""></div>
+                        </div>
+                        <div class="hero-article">
+                            <h1 class="hero__title title" data-aos="fade-left" data-aos-duration="800" data-aos-delay="0">Scrooge <br> McDuck</h1>
+                            <p class="hero-article__subtitle" data-aos="fade-left" data-aos-duration="800" data-aos-delay="50">Be a rich duck -  buy a Scrooge McDuck</p>
+                            <div class="hero-article__actions" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+                                <button class="hero-article__button button button_red">buy smduck</button>
+                                <div class="hero-article__social">
+                                    <a href="#" class="hero-article__social-icon"><img src="./img/icons/tg-icon.svg" alt=""></a>
+                                    <a href="#" class="hero-article__social-icon"><img src="./img/icons/twitter-icon.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="hero__article" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+                                <p class="hero__paragraph paragraph">
+                                    PEPE, DOGE, SHIB.... It seems we are losing sight of the true symbol of “adventure capitalism”, wealth, frugality, and a tendency to seek more money through adventure.
+                                </p>
+                                <p class="hero__paragraph paragraph">
+                                    Meet Scrooge McDuck $SMDUCK, the idol of millions of people! Join the duck army and start getting rich.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-marquee">
+                    <div class="hero-marquee__wrapper">
+                        <span class="hero-marquee__el">Target - 200x till 01/01/2024</span>
+                        <span class="hero-marquee__el">Target - 200x till 01/01/2024</span>
+                        <span class="hero-marquee__el">Target - 200x till 01/01/2024</span>
+                        <span class="hero-marquee__el">Target - 200x till 01/01/2024</span>
+                    </div>
+                </div>
+                <div class="hero__container-big">
+                    <div class="hero__article">
+                        <p class="hero__paragraph paragraph">
+                            PEPE, DOGE, SHIB.... It seems we are losing sight of the true symbol of “adventure capitalism”, wealth, frugality, and a tendency to seek more money through adventure.
+                        </p>
+                        <p class="hero__paragraph paragraph">
+                            Meet Scrooge McDuck $SMDUCK, the idol of millions of people! Join the duck army and start getting rich.
+                        </p>
+                    </div>
+                </div>
             </section>
+
+            <div class="main__conclusion conclusion">
+                <div class="conclusion__container-big">
+                    <div class="conclusion__preview" data-aos="fade-up" data-aos-duration="800">
+                        <div class="conclusion__decor"><img src="./img/decor/blue-smear.svg" alt=""></div>
+                        <div class="conclusion__preview-image"><img src="./img/logo.svg" alt=""></div>
+                    </div>
+                    <p class="conclusion__paragraph paragraph" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                        Scrooge McDuck Token is a revolutionary meme on Binance Smart Chain inspired by the iconic character from Disney's DuckTales. It leverages the power of nostalgia and the widespread appeal of Scrooge McDuck to create a unique and vibrant community-driven cryptocurrency.
+                    </p>
+                </div>
+            </div>
         </main>
         <footer class="footer">
             <div class="footer__container">
@@ -67,5 +128,10 @@
     </div>
 
     <script src="./js/burger.js"></script>
+    <script src="./js/parralax.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

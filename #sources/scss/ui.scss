@@ -1,6 +1,9 @@
 @import './fonts';
 @import './var';
 
+html, body {
+    scroll-behavior: smooth;
+}
 
 [class*="__container"] {
     width: 100%;

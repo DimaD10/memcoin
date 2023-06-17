@@ -105,6 +105,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-style: normal;
 }
+html, body {
+  scroll-behavior: smooth;
+}
+
 [class*=__container] {
   width: 100%;
   max-width: 1180px;
@@ -1776,6 +1780,7 @@ button, a {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   position: relative;
+  margin-right: auto;
 }
 @media (max-width: 767.98px) {
   .meet-article {
@@ -1926,34 +1931,51 @@ button, a {
 }
 
 .meet-preview {
+  margin-left: auto;
   position: relative;
-  width: 100%;
-  margin-left: -60px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
 }
-@media (min-width: 767.98px) {
+@media (max-width: 767.98px) {
   .meet-preview {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(60% + 60px);
-            flex: 0 0 calc(60% + 60px);
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    width: 100%;
+    margin-top: 40px;
   }
 }
-@media (max-width: 567.98px) {
-  .meet-preview {
-    margin-left: -30px;
+.meet-preview__img {
+  max-width: 696px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  padding-top: 83.4770114943%;
+  min-height: 83.4770114943%;
+  margin-left: auto;
+}
+@media (max-width: 1200px) {
+  .meet-preview__img {
+    max-width: calc(400px + 296 * (100vw - 767.98px) / 432.02);
   }
 }
-.meet-preview__img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
+@media (max-width: 767.98px) {
+  .meet-preview__img {
+    max-width: 696px;
+    width: 100%;
+  }
+}
+.meet-preview__img a, .meet-preview__img div {
+  position: absolute;
+}
+.meet-preview__img a img, .meet-preview__img div img {
+  max-width: 100%;
 }
 .meet-preview__shadow {
   position: absolute;
   bottom: 0;
-  left: 16%;
+  left: 7%;
   width: 153.24%;
 }
 .meet-preview__shadow img {
@@ -1963,6 +1985,74 @@ button, a {
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+}
+.meet-preview__link {
+  -webkit-transition: -webkit-transform ease-in-out 0.2s;
+  transition: -webkit-transform ease-in-out 0.2s;
+  transition: transform ease-in-out 0.2s;
+  transition: transform ease-in-out 0.2s, -webkit-transform ease-in-out 0.2s;
+}
+.meet-preview__link:hover {
+  -webkit-transform: scale(1.02) rotate(8deg);
+          transform: scale(1.02) rotate(8deg);
+}
+.meet-preview__img-sp1 {
+  position: absolute;
+  width: 32.9%;
+  left: 1.29%;
+  top: 15.49%;
+  -webkit-transform: scale(2.7);
+          transform: scale(2.7);
+}
+.meet-preview__img-sp2 {
+  position: absolute;
+  width: 47.99%;
+  right: 6%;
+  bottom: 5%;
+  -webkit-transform: scale(1.98);
+          transform: scale(1.98);
+}
+@media (max-width: 767.98px) {
+  .meet-preview__img-sp2 {
+    -webkit-transform: scale(1.9);
+            transform: scale(1.9);
+  }
+}
+.meet-preview__img-decor {
+  position: absolute;
+  width: 16.67%;
+  left: 27.87%;
+  top: 0;
+}
+.meet-preview__img-cmc {
+  position: absolute;
+  width: 31.03%;
+  left: 0;
+  bottom: 3.1%;
+}
+.meet-preview__img-cg {
+  position: absolute;
+  width: 20.98%;
+  left: 33.19%;
+  bottom: 0;
+}
+.meet-preview__img-tw {
+  position: absolute;
+  width: 20.98%;
+  left: 28.88%;
+  bottom: 27.71%;
+}
+.meet-preview__img-mm {
+  position: absolute;
+  width: 21.55%;
+  left: 37.07%;
+  top: 19.79%;
+}
+.meet-preview__img-bsc {
+  position: absolute;
+  width: 19.83%;
+  right: 20.98%;
+  top: 10.84%;
 }
 
 .main__tocenomics {
@@ -2444,7 +2534,7 @@ button, a {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   overflow: hidden;
-  background: conic-gradient(rgb(219, 66, 84) 0%, rgb(219, 66, 84) 19.9%, rgba(255, 99, 132, 0) 20%, rgba(54, 162, 235, 0) 20.4%, rgb(160, 127, 242) 20.4%, rgb(160, 127, 242) 39.9%, rgba(54, 162, 235, 0) 40%, rgba(204, 101, 254, 0) 40.4%, rgb(180, 239, 1) 40.4%, rgb(180, 239, 1) 59.9%, rgba(255, 206, 86, 0) 60%, rgba(255, 206, 86, 0) 60.4%, rgb(42, 171, 238) 60.4%, rgb(42, 171, 238) 79.9%, rgba(75, 192, 192, 0) 80%, rgba(255, 99, 132, 0) 80.4%, rgb(255, 255, 255) 80.4%, rgb(255, 255, 255) 99.6%, rgba(75, 192, 192, 0) 99.6%, rgba(255, 99, 132, 0) 100%);
+  background: conic-gradient(rgb(219, 66, 84) 0%, rgb(219, 66, 84) 0%, rgba(255, 99, 132, 0) 0%, rgba(54, 162, 235, 0) 0%, rgb(160, 127, 242) 0%, rgb(160, 127, 242) 0%, rgba(54, 162, 235, 0) 0%, rgba(204, 101, 254, 0) 0%, rgb(180, 239, 1) 0%, rgb(180, 239, 1) 0%, rgba(255, 206, 86, 0) 0%, rgba(255, 206, 86, 0) 0%, rgb(42, 171, 238) 0%, rgb(42, 171, 238) 0%, rgba(75, 192, 192, 0) 0%, rgba(255, 99, 132, 0) 0%, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgba(75, 192, 192, 0) 0%, rgba(255, 99, 132, 0) 100%);
   z-index: 1;
   padding: 14px;
 }

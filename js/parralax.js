@@ -17,6 +17,11 @@ window.onload = function () {
         // for utility
         const blueMash = document.querySelector('.utility__decor-bg');
         const duckHead = document.querySelector('.utility__decor-duck');
+        // for meet
+        const coin1 = document.querySelector('.meet-article__decor-coin_top-left');
+        const coin2 = document.querySelector('.meet-article__decor-coin_top-right');
+        const coin3 = document.querySelector('.meet-article__decor-coin_bottom-right');
+        const meetDecor = document.querySelector('.meet-article__decor');
 
         // main__conclusion
         const forDecor = -50;
@@ -31,6 +36,11 @@ window.onload = function () {
         // for utility
         const forBlueMash = 30;
         const forDuckHead = -50;
+        // for meet
+        const forCoin1 = 45;
+        const forCoin2 = -15;
+        const forCoin3 = 40;
+        const forMeetDecor = 30;
 
         const speed = 0.12;
 
@@ -59,6 +69,13 @@ window.onload = function () {
             // for utility
             blueMash.style.cssText = `transform: translate(${positionX / forBlueMash}%, ${positionY / forBlueMash}%);`;
             duckHead.style.cssText = `transform: translate(${positionX / forDuckHead}%, ${positionY / forDuckHead}%);`;
+
+            // for meet
+            coin1.style.cssText = `transform: translate(${positionX / forCoin1}%, ${positionY / forCoin1}%);`;
+            coin2.style.cssText = `transform: translate(${positionX / forCoin2}%, ${positionY / forCoin2}%);`;
+            coin3.style.cssText = `transform: translate(${positionX / forCoin3}%, ${positionY / forCoin3}%);`;
+            meetDecor.style.cssText = `transform: translate(${positionX / forMeetDecor}%, ${positionY / forMeetDecor}%);`;
+
 
             requestAnimationFrame(setMouseParallaxStyle);
         }

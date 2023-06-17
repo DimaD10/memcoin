@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>memcoin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo-icon.png">
@@ -107,7 +108,7 @@
                                 <h3 class="list-nft__title">Less than <br> 1 BNB</h3>
                                 <div class="nft-preview">
                                     <div class="nft-preview__decor">
-                                        <img src="./img/decor/red-smear.svg" alt="">
+                                        <img src="./img/decor/red-smear.png" alt="">
                                     </div>
                                     <div class="nft-preview__img">
                                         <img src="./img/main__nft/nft-box.png" alt="">
@@ -120,7 +121,7 @@
                                 <h3 class="list-nft__title">1 BNB <br> and more</h3>
                                 <div class="nft-preview">
                                     <div class="nft-preview__decor">
-                                        <img src="./img/decor/red-smear.svg" alt="">
+                                        <img src="./img/decor/red-smear.png" alt="">
                                     </div>
                                     <div class="nft-preview__img">
                                         <img src="./img/main__nft/nft-box.png" alt="">
@@ -133,7 +134,7 @@
                                 <h3 class="list-nft__title">2 BNB <br> and more</h3>
                                 <div class="nft-preview">
                                     <div class="nft-preview__decor">
-                                        <img src="./img/decor/red-smear.svg" alt="">
+                                        <img src="./img/decor/red-smear.png" alt="">
                                     </div>
                                     <div class="nft-preview__img">
                                         <img src="./img/main__nft/nft-box.png" alt="">
@@ -146,7 +147,7 @@
                                 <h3 class="list-nft__title">3 BNB <br> and more</h3>
                                 <div class="nft-preview">
                                     <div class="nft-preview__decor">
-                                        <img src="./img/decor/red-smear.svg" alt="">
+                                        <img src="./img/decor/red-smear.png" alt="">
                                     </div>
                                     <div class="nft-preview__img">
                                         <img src="./img/main__nft/nft-box.png" alt="">
@@ -159,7 +160,7 @@
                                 <h3 class="list-nft__title">5 BNB</h3>
                                 <div class="nft-preview">
                                     <div class="nft-preview__decor">
-                                        <img src="./img/decor/red-smear.svg" alt="">
+                                        <img src="./img/decor/red-smear.png" alt="">
                                     </div>
                                     <div class="nft-preview__img">
                                         <img src="./img/main__nft/nft-box.png" alt="">
@@ -174,35 +175,261 @@
             </section>
 
             <section class="main__utility utility">
-                <div class="utility__container">
-                    <div class="utility__wrapper">
-                        <div class="utility__header">
-                            <div class="utility__decor-bg"><img src="./img/main_utility/purple-bg.svg" alt="" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"></div>
-                            <div class="utility__decor-duck"><img src="./img/main_utility/mcduck.png" alt="" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0"></div>
+                <div class="utility-box">
+                    <div class="utility__container">
+                        <div class="utility__wrapper">
+                            <div class="utility__header">
+                                <div class="utility__decor-bg"><img src="./img/main_utility/purple-bg.png" alt="" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"></div>
+                                <div class="utility__decor-duck"><img src="./img/main_utility/mcduck.png" alt="" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0"></div>
+                            </div>
+                            <h2 class="utility__title title">Real utility <span>SMDUCK</span> and McDuck NFTs</h2>
+                            <div class="utility__list" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+                                <div class="utility__card utility-card">
+                                    <div class="utility-card__preview">
+                                        <img src="./img/main_utility/cards/img1.png" alt="">
+                                    </div>
+                                    <p class="utility-card__descr paragraph">All tokens spent on the NFT collection mint will be burned.</p>
+                                    <span class="utility-card__label">PHASE 3</span>
+                                </div>
+                                <div class="utility__card utility-card">
+                                    <div class="utility-card__preview">
+                                        <img src="./img/main_utility/cards/img2.png" alt="">
+                                    </div>
+                                    <p class="utility-card__descr paragraph">All SMDUCK holders will be granted the right to vote in DAO</p>
+                                    <span class="utility-card__label">PHASE 3</span>
+                                </div>
+                                <div class="utility__card utility-card">
+                                    <div class="utility-card__preview">
+                                        <img src="./img/main_utility/cards/img3.png" alt="">
+                                    </div>
+                                    <p class="utility-card__descr paragraph">McDuck NFTs and SMDUCK tokens will be used in the McDuck metaverse</p>
+                                    <span class="utility-card__label">PHASE 4</span>
+                                </div>
+                            </div>
                         </div>
-                        <h2 class="utility__title title">Real utility <span>SMDUCK</span> and McDuck NFTs</h2>
-                        <div class="utility__list" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
-                            <div class="utility__card utility-card">
-                                <div class="utility-card__preview">
-                                    <img src="./img/main_utility/cards/img1.png" alt="">
-                                </div>
-                                <p class="utility-card__descr paragraph">All tokens spent on the NFT collection mint will be burned.</p>
-                                <span class="utility-card__label">PHASE 3</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__meet meet">
+                <div class="meet__container">
+                    <div class="meet__wrapper">
+                        <div class="meet-article" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+                            <h2 class="meet__title title">
+                                Meet our partners
+                                <div class="meet-article__decor"><img src="./img/main__meet/purple-decor.svg" alt=""></div>
+                            </h2>
+                            <p class="meet__paragraph paragraph">
+                                To be announced once presale and listings are completed
+                            </p>
+
+                            <div class="meet-article__decor-coin meet-article__decor-coin_top-left">
+                                <img src="./img/main__meet/coins/coin.png" alt="" data-aos="fade-right" data-aos-duration="800" data-aos-delay="50">
                             </div>
-                            <div class="utility__card utility-card">
-                                <div class="utility-card__preview">
-                                    <img src="./img/main_utility/cards/img2.png" alt="">
-                                </div>
-                                <p class="utility-card__descr paragraph">All SMDUCK holders will be granted the right to vote in DAO</p>
-                                <span class="utility-card__label">PHASE 3</span>
+                            <div class="meet-article__decor-coin meet-article__decor-coin_top-right">
+                                <img src="./img/main__meet/coins/coin2.png" alt="" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
                             </div>
-                            <div class="utility__card utility-card">
-                                <div class="utility-card__preview">
-                                    <img src="./img/main_utility/cards/img3.png" alt="">
-                                </div>
-                                <p class="utility-card__descr paragraph">McDuck NFTs and SMDUCK tokens will be used in the McDuck metaverse</p>
-                                <span class="utility-card__label">PHASE 4</span>
+                            <div class="meet-article__decor-coin meet-article__decor-coin_bottom-right">
+                                <img src="./img/main__meet/coins/coin3.png" alt="" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
                             </div>
+                        </div>
+                        <div class="meet-preview" data-aos="fade-left" data-aos-duration="800" data-aos-delay="50">
+                            <div class="meet-preview__img">
+                                <img src="./img/main__meet/preview.svg" alt="">
+                            </div>
+                            <div class="meet-preview__shadow">
+                                <img src="./img/main__meet/preview-shadow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__tocenomics tocenomics">
+                <div class="tocenomics__decor-red"><img src="./img/main__tocenomics/decor-red.png" alt=""></div>
+                <div class="tocenomics__decor-blue"><img src="./img/main__tocenomics/decor-blue.png" alt=""></div>
+
+                <div class="tocenomics__container">
+                    <div class="tocenomics__card">
+                        <div class="tocenomics__title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+                            <img src="./img/main__tocenomics/title.png" alt="tocenomics">
+                        </div>
+                        <div class="tocenomics-body" data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">
+                            <div class="tocenomics-body__table">
+                                <div class="tocenomics-body__table-row">
+                                    <div class="tocenomics-body__tabel-title">Symbol:</div>
+                                    <div class="tocenomics-body__table-value">SMDUCK</div>
+                                </div>
+                                <div class="tocenomics-body__table-row">
+                                    <div class="tocenomics-body__tabel-title">Supply:</div>
+                                    <div class="tocenomics-body__table-value">1.000.000.000</div>
+                                </div>
+                                <div class="tocenomics-body__table-row">
+                                    <div class="tocenomics-body__tabel-title">Сhain:</div>
+                                    <div class="tocenomics-body__table-value">Binance Smart Chain</div>
+                                </div>
+                                <div class="tocenomics-body__table-row">
+                                    <div class="tocenomics-body__tabel-title">TAX:</div>
+                                    <div class="tocenomics-body__table-value">0% / 0%</div>
+                                </div>
+                            </div>
+                            <div class="tocenomics-pie">
+                                <div class="tocenomics-pie__wrapper">
+                                    <img src="./img/main__tocenomics/pie-decor.svg" alt="" class="tocenomics-pie__bg">
+                                    <div class="tocenomics-pie__pie">
+                                        <div class="tocenomics-pie__decor">
+                                            <div class="tocenomics-pie__inner-border">
+                                                <div class="tocenomics-pie__inner-box">
+                                                    <div class="tocenomics-pie__image">
+                                                        <img src="./img/main__tocenomics/center-img.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tocenomics-body__legends">
+                                <div class="tocenomics-body__legend burned-legend">
+                                    <div class="tocenomics-body__pic-legend"></div>
+                                    <span class="tocenomics-body__value-legend"><span class="value-tocenomics" id="burned">51</span>% - Burned (On 06/15/2023)</span>
+                                </div>
+                                <div class="tocenomics-body__legend presale-legend">
+                                    <div class="tocenomics-body__pic-legend"></div>
+                                    <span class="tocenomics-body__value-legend"><span class="value-tocenomics" id="presale">27</span>% - Presale</span>
+                                </div>
+                                <div class="tocenomics-body__legend liquidity-legend">
+                                    <div class="tocenomics-body__pic-legend"></div>
+                                    <span class="tocenomics-body__value-legend"><span class="value-tocenomics" id="liquidity">13.77</span>% - Liquidity (1 year lock)</span>
+                                </div>
+                                <div class="tocenomics-body__legend marketing-legend">
+                                    <div class="tocenomics-body__pic-legend"></div>
+                                    <span class="tocenomics-body__value-legend"><span class="value-tocenomics" id="marketing">6.23</span>% - Marketing</span>
+                                </div>
+                                <div class="tocenomics-body__legend airdrop-legend">
+                                    <div class="tocenomics-body__pic-legend"></div>
+                                    <span class="tocenomics-body__value-legend"><span class="value-tocenomics" id="airdrop">2</span>% - Airdrop</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tocenomics-token" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            <div class="tocenomics-token__field">
+                                <div class="tocenomics-token__label">BSC BEP20</div>
+                                <input type="text" value="0xE79269544517188A38938A599ccdaF8F90818812" id="token-id" readonly data-action="copy-token">
+                                <button class="tocenomics-token__icon" data-action="copy-token">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.68 0H6.6C6.24991 0 5.91417 0.139071 5.66662 0.386619C5.41907 0.634167 5.28 0.969914 5.28 1.32V5.28H1.32C0.969914 5.28 0.634167 5.41907 0.386619 5.66662C0.139071 5.91417 0 6.24991 0 6.6V20.68C0 21.0301 0.139071 21.3658 0.386619 21.6134C0.634167 21.8609 0.969914 22 1.32 22H15.4C15.7501 22 16.0858 21.8609 16.3334 21.6134C16.5809 21.3658 16.72 21.0301 16.72 20.68V16.72H20.68C21.0301 16.72 21.3658 16.5809 21.6134 16.3334C21.8609 16.0858 22 15.7501 22 15.4V1.32C22 0.969914 21.8609 0.634167 21.6134 0.386619C21.3658 0.139071 21.0301 0 20.68 0ZM14.08 19.36H2.64V7.92H14.08V19.36ZM19.36 14.08H16.72V6.6C16.72 6.24991 16.5809 5.91417 16.3334 5.66662C16.0858 5.41907 15.7501 5.28 15.4 5.28H7.92V2.64H19.36V14.08Z" fill="white"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__roadmap roadmap">
+                <div class="roadmap__container">
+                    <div class="roadmap__header" data-aos="fade-right" data-aos-duration="800" data-aos-delay="0">
+                        <h2 class="roadmap__title title">Roadmap</h2>
+                        <div class="roadmap__header-decor"></div>
+                    </div>
+                    <div class="roadmap-body">
+                        <div class="roadmap__decor">
+                            <img src="./img/decor/roadmap-decor.png" alt="">
+                        </div>
+                        <div class="roadmap-slider" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide roadmap-card roadmap-card_complete">
+                                    <div class="roadmap-card__header">
+                                        <div class="roadmap-card__phase">Phase 1</div>
+                                        <div class="roadmap-card__marker">
+                                            <img src="./img/icons/bird-icon.svg" alt="" class="marker-complete">
+                                            <img src="./img/icons/target-icon.svg" alt="" class="marker-target">
+                                            <img src="./img/icons/waiting-icon.svg" alt="" class="marker-wait">
+                                        </div>
+                                    </div>
+                                    <div class="roadmap-card__body roadmap-steps">
+                                        <div class="roadmap-steps__step">Website Development</div>
+                                        <div class="roadmap-steps__step">Whitepaper</div>
+                                        <div class="roadmap-steps__step">Community Building</div>
+                                        <div class="roadmap-steps__step">Contract Development And Audit</div>
+                                        <div class="roadmap-steps__step">Creating social media accounts</div>
+                                    </div>
+                                    <div class="roadmap-card__done">
+                                        <img src="./img/main__roadmap/done.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide roadmap-card roadmap-card_target">
+                                    <div class="roadmap-card__header">
+                                        <div class="roadmap-card__phase">Phase 2</div>
+                                        <div class="roadmap-card__marker">
+                                            <img src="./img/icons/bird-icon.svg" alt="" class="marker-complete">
+                                            <img src="./img/icons/target-icon.svg" alt="" class="marker-target">
+                                            <img src="./img/icons/waiting-icon.svg" alt="" class="marker-wait">
+                                        </div>
+                                    </div>
+                                    <div class="roadmap-card__body roadmap-steps">
+                                        <div class="roadmap-steps__step">Pinksale Launch</div>
+                                        <div class="roadmap-steps__step">DEX Listing</div>
+                                        <div class="roadmap-steps__step">CoinGecko / CoinMarketCap Listings</div>
+                                        <div class="roadmap-steps__step">Airdrop</div>
+                                        <div class="roadmap-steps__step">Tier 2 CEX Listings</div>
+                                        <div class="roadmap-steps__step">Secret Partners Announcement</div>
+                                        <div class="roadmap-steps__step">1,000 Holders</div>
+                                        <div class="roadmap-steps__step">5,000 Twitter Followers</div>
+                                        <div class="roadmap-steps__step">1M Market Cap</div>
+                                    </div>
+                                    <div class="roadmap-card__done">
+                                        <img src="./img/main__roadmap/done.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide roadmap-card roadmap-card_wait">
+                                    <div class="roadmap-card__header">
+                                        <div class="roadmap-card__phase">Phase 3</div>
+                                        <div class="roadmap-card__marker">
+                                            <img src="./img/icons/bird-icon.svg" alt="" class="marker-complete">
+                                            <img src="./img/icons/target-icon.svg" alt="" class="marker-target">
+                                            <img src="./img/icons/waiting-icon.svg" alt="" class="marker-wait">
+                                        </div>
+                                    </div>
+                                    <div class="roadmap-card__body roadmap-steps">
+                                        <div class="roadmap-steps__step">Huge post-launch marketing campaign</div>
+                                        <div class="roadmap-steps__step">More CEX listings</div>
+                                        <div class="roadmap-steps__step">DAO Creation</div>
+                                        <div class="roadmap-steps__step">10,000 Holders</div>
+                                        <div class="roadmap-steps__step">10,000 Twitter Followers</div>
+                                        <div class="roadmap-steps__step">10M Market Cap</div>
+                                        <div class="roadmap-steps__step">McDuck Metaverse Development</div>
+                                    </div>
+                                    <div class="roadmap-card__done">
+                                        <img src="./img/main__roadmap/done.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide roadmap-card roadmap-card_wait">
+                                    <div class="roadmap-card__header">
+                                        <div class="roadmap-card__phase">Phase 4</div>
+                                        <div class="roadmap-card__marker">
+                                            <img src="./img/icons/bird-icon.svg" alt="" class="marker-complete">
+                                            <img src="./img/icons/target-icon.svg" alt="" class="marker-target">
+                                            <img src="./img/icons/waiting-icon.svg" alt="" class="marker-wait">
+                                        </div>
+                                    </div>
+                                    <div class="roadmap-card__body roadmap-steps">
+                                        <div class="roadmap-steps__step">Top Tier Exchange Listing</div>
+                                        <div class="roadmap-steps__step">NFT Marketplace Release</div>
+                                        <div class="roadmap-steps__step">McDuck Metaverse Beta Launch</div>
+                                        <div class="roadmap-steps__step">Top 20 in Memecoin Category</div>
+                                        <div class="roadmap-steps__step">100,000 Holders</div>
+                                        <div class="roadmap-steps__step">50M Market Cap</div>
+                                        <div class="roadmap-steps__step">New Roadmap</div>
+                                    </div>
+                                    <div class="roadmap-card__done">
+                                        <img src="./img/main__roadmap/done.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-scrollbar"></div>
                         </div>
                     </div>
                 </div>
@@ -211,7 +438,7 @@
             <div class="main__conclusion conclusion">
                 <div class="conclusion__container-big">
                     <div class="conclusion__preview" data-aos="fade-up" data-aos-duration="800">
-                        <div class="conclusion__decor"><img src="./img/decor/blue-smear.svg" alt=""></div>
+                        <div class="conclusion__decor"><img src="./img/decor/blue-smear.png" alt=""></div>
                         <div class="conclusion__preview-image"><img src="./img/logo.svg" alt=""></div>
                     </div>
                     <p class="conclusion__paragraph paragraph" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
@@ -251,8 +478,12 @@
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/burger.js"></script>
     <script src="./js/parralax.js"></script>
+    <script src="./js/copy.js"></script>
+    <script src="./js/pie-range.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

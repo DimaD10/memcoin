@@ -22,6 +22,10 @@ window.onload = function () {
         const coin2 = document.querySelector('.meet-article__decor-coin_top-right');
         const coin3 = document.querySelector('.meet-article__decor-coin_bottom-right');
         const meetDecor = document.querySelector('.meet-article__decor');
+        // for airdrop
+        const airCoin1 = document.querySelector('.airdrop-article__coin1');
+        const airCoin2 = document.querySelector('.airdrop-article__coin2');
+        const airMoney = document.querySelector('.airdrop-article__money');
 
         // main__conclusion
         const forDecor = -50;
@@ -41,6 +45,11 @@ window.onload = function () {
         const forCoin2 = -15;
         const forCoin3 = 40;
         const forMeetDecor = 30;
+        // for airdrop
+        const forAirCoin1 = 20;
+        const forAirCoin2 = -10;
+        const forAirMoney = 30;
+        
 
         const speed = 0.12;
 
@@ -75,6 +84,11 @@ window.onload = function () {
             coin2.style.cssText = `transform: translate(${positionX / forCoin2}%, ${positionY / forCoin2}%);`;
             coin3.style.cssText = `transform: translate(${positionX / forCoin3}%, ${positionY / forCoin3}%);`;
             meetDecor.style.cssText = `transform: translate(${positionX / forMeetDecor}%, ${positionY / forMeetDecor}%);`;
+
+            // for airdrop
+            airCoin1.style.cssText = `transform: translate(${positionX / forAirCoin1}%, ${positionY / forAirCoin1}%);`;
+            airCoin2.style.cssText = `transform: translate(${positionX / forAirCoin2}%, ${positionY / forAirCoin2}%);`;
+            airMoney.style.cssText = `transform: translate(${positionX / forAirMoney}%, ${positionY / forAirMoney}%);`;
 
 
             requestAnimationFrame(setMouseParallaxStyle);
